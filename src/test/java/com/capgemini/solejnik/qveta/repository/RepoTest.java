@@ -1,6 +1,7 @@
 package com.capgemini.solejnik.qveta.repository;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +20,7 @@ public class RepoTest {
 	@Test
 	public void test() {
 		// given
-		CityEntity city = new CityEntity("Poznan");
+		CityEntity city = new CityEntity("Kuba");
 		// when
 		repo.save(city);
 		// then

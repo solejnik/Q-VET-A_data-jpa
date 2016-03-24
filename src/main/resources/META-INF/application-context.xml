@@ -13,11 +13,11 @@
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="datasource" />
 		<property name="persistenceUnitName" value="qveta-persistence"/>
-		<property name="packagesToScan">
-            <array>
-                <value>com.capgemini.solejnik.qveta</value>
-            </array>
-        </property>
+<!-- 		<property name="packagesToScan"> -->
+<!--             <array> -->
+<!--                 <value>com.capgemini.solejnik.qveta</value> -->
+<!--             </array> -->
+<!--         </property> -->
 	</bean>
 	<!-- transaction -->
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
